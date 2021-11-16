@@ -43,6 +43,7 @@ provider "kubernetes" {
 resource "kubernetes_deployment" "nginx" {
   metadata {
     name = "scalable-nginx-example"
+    namespace = "xxxxx"
     labels = {
       App = "ScalableNginxExample"
     }
